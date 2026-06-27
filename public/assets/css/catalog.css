@@ -1,0 +1,259 @@
+.catalog-hero {
+    background: linear-gradient(135deg, #000, #1d1d1f, #3a3a3c);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.catalog-hero p {
+    color: #9ecbff;
+    margin-bottom: 12px;
+}
+
+.catalog-hero h1 {
+    font-size: 56px;
+    margin-bottom: 16px;
+}
+
+.catalog-hero span {
+    color: #d2d2d7;
+    font-size: 18px;
+}
+
+.catalog-container {
+    padding: 70px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #6e6e73;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 28px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 180px;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.storage {
+    color: #6e6e73;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stock {
+    color: green;
+    margin-bottom: 18px;
+}
+
+.product-card a {
+    display: inline-block;
+    background: #1d1d1f;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+.product-card a:hover {
+    background: #0071e3;
+}
+
+.empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #6e6e73;
+}
+
+@media (max-width: 900px) {
+    .catalog-container {
+        padding: 50px 24px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .catalog-hero h1 {
+        font-size: 38px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.detail-container {
+    padding: 80px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.detail-image {
+    background: white;
+    border-radius: 32px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.detail-image img {
+    width: 280px;
+    height: 360px;
+    object-fit: contain;
+}
+
+.detail-info h1 {
+    font-size: 46px;
+    margin-bottom: 12px;
+}
+
+.detail-info h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.description {
+    color: #6e6e73;
+    line-height: 1.7;
+    margin: 24px 0;
+}
+
+.detail-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-dark,
+.btn-blue {
+    padding: 14px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-dark {
+    background: #1d1d1f;
+}
+
+.btn-blue {
+    background: #0071e3;
+}
+
+@media (max-width: 768px) {
+    .detail-container {
+        grid-template-columns: 1fr;
+        padding: 40px 24px;
+    }
+
+    .detail-info h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .catalog-container {
+        padding: 60px 36px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .catalog-hero h1 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 600px) {
+    .catalog-hero {
+        padding: 70px 20px;
+    }
+
+    .catalog-hero h1 {
+        font-size: 34px;
+    }
+
+    .catalog-hero span {
+        font-size: 15px;
+    }
+
+    .catalog-container {
+        padding: 40px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .product-card {
+        border-radius: 22px;
+        padding: 28px 20px;
+    }
+
+    .product-card img {
+        width: 150px;
+        height: 190px;
+    }
+
+    .product-card h3 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .btn-detail {
+        width: 100%;
+        text-align: center;
+    }
+}

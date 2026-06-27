@@ -1,0 +1,161 @@
+.profile-container {
+    padding: 80px 70px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.profile-header p {
+    color: #6e6e73;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1.2fr;
+    gap: 28px;
+}
+
+.profile-card {
+    background: white;
+    padding: 32px;
+    border-radius: 28px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.user-card {
+    text-align: center;
+}
+
+.avatar {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: #0071e3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.profile-card h2 {
+    margin-bottom: 22px;
+}
+
+.user-card h2 {
+    margin-bottom: 8px;
+}
+
+.user-card p {
+    color: #6e6e73;
+    margin-bottom: 16px;
+}
+
+.user-card span {
+    display: inline-block;
+    background: #f5f5f7;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.profile-card label {
+    display: block;
+    margin: 16px 0 8px;
+    font-weight: 600;
+}
+
+.profile-card input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.profile-card button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+    border: none;
+    border-radius: 999px;
+    background: #0071e3;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-card button:hover {
+    background: #005bb5;
+}
+
+.alert {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    padding: 14px 18px;
+    border-radius: 14px;
+}
+
+.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+@media (max-width: 1000px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-container {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .profile-container {
+        padding: 60px 36px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 40px 20px;
+    }
+
+    .profile-header h1 {
+        font-size: 32px;
+    }
+
+    .profile-card {
+        padding: 24px;
+        border-radius: 20px;
+    }
+
+    .avatar {
+        width: 78px;
+        height: 78px;
+        font-size: 32px;
+    }
+
+    .profile-card input,
+    .profile-card button {
+        font-size: 14px;
+    }
+}
