@@ -209,7 +209,7 @@ Beberapa halaman utama:
 
 Project Ujian Akhir Semester (UAS)
 
-Universitas Singaperbangsa Karawang
+Universitas Buana Perjuangan Karawang
 
 ---
 
